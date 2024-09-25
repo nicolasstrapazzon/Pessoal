@@ -66,6 +66,7 @@
 
   section#sobre,
   section#projetos,
+  section#cadastro,
   section#contato {
     background-color: #fff;
     padding: 20px;
@@ -79,7 +80,46 @@
     margin-top: 20px;
   }
 
+h3 {
+    text-align: center;
 
+
+  }
+
+
+  form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+  }
+  label,
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"]{
+    width: 95%;
+    padding:10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="submit"]{
+        width: 100%;
+    padding:10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor:pointer;
+  }
+  input[type="submit"]:hover{
+    background-color: #0056b3;
+   
+  }
 
 
 </style>
@@ -90,8 +130,9 @@
       <ul>
         <li><a href="#sobre">sobre mim</a></li>
         <li><a href="#projetos">projetos</a></li>
+        <li><a href="#cadastro">cadastro</a></li>
         <li><a href="#contato">contato</a></li>
-         <li><a href="#cadastro">contato</a></li>
+         
       </ul>
     </nav>
   </header>
@@ -112,7 +153,26 @@
         <li>Projeto 3<a href="#projetos">descrição do projeto </a></li>
       </ul>
     </nav>
+    <section id="cadastro">
+<h3>cadastro de pessoas</h2>
+  <form>
+    <label>nome</label>
+    <input type="text" id="nome" name="nome" required>
+    <label>Email</label>
+    <input type="email" id="email" name="email" required>
+    <label>telefone</label>
+    <input type="tel" id="telefone" name="telefone" required>
+    <input type="submit" value="Cadastrar">
+
+  </form>
+
+
+
+
   </section>
+
+
+  
   <section id="contato">
     <h2>𝕮𝖔𝖓𝖙𝖆𝖙𝖔</h2>
     <p>Entre em contato comigo via<a href="mailto:nicolas_strapazzon@gmail.com
